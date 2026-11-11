@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrar · NEXA BUSINESS</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<main class="auth">
+  <section class="auth-brand">
+    <div class="logo">NEXA<span>.</span>BUSINESS</div>
+    <div><h2>Toda a gestão comercial da sua empresa em um só lugar.</h2>
+      <p>Clientes, oportunidades, vendas e tarefas com dados seguros e sempre atualizados.</p>
+      <ul><li>Pipeline de vendas em Kanban</li><li>Indicadores em tempo real</li><li>Dados isolados por empresa</li></ul></div>
+    <small style="color:#8fa6bd">© NEXA BUSINESS</small>
+  </section>
+  <section class="auth-form"><div class="auth-card">
+    <h1>Entrar</h1><p class="sub">Acesse sua conta para continuar.</p>
+    <div id="config-warning" class="alert" hidden>Configure a URL e a chave do Supabase em <b>js/config.js</b> (veja o README).</div>
+    <form id="form-login">
+<div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+<div class="field"><label for="password">Senha</label><input id="password" name="password" type="password" required autocomplete="current-password"></div>
+      <button class="btn" type="submit">Entrar</button>
+    </form>
+    <div class="auth-links"><a href="#" id="link-forgot">Esqueci minha senha</a><a href="cadastro.html">Criar conta</a></div>
+  </div></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script><script src="js/supabase.js"></script><script src="js/utils.js"></script><script src="js/auth.js"></script>
+</body></html>

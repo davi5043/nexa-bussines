@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEXA BUSINESS</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">NEXA<span>.</span>BUSINESS</div>
+    <nav>
+      <small>Principal</small>
+      <a href="#/dashboard" data-route="dashboard"><i data-lucide="layout-dashboard"></i>Visão geral</a>
+      <small>Comercial</small>
+      <a href="#/clients" data-route="clients"><i data-lucide="users"></i>Clientes</a>
+      <a href="#/companies" data-route="companies"><i data-lucide="building-2"></i>Empresas</a>
+      <a href="#/opportunities" data-route="opportunities"><i data-lucide="target"></i>Oportunidades</a>
+      <a href="#/sales" data-route="sales"><i data-lucide="receipt"></i>Vendas</a>
+      <small>Gestão</small>
+      <a href="#/tasks" data-route="tasks"><i data-lucide="check-square"></i>Tarefas</a>
+      <a href="#/reports" data-route="reports"><i data-lucide="bar-chart-3"></i>Relatórios</a>
+      <a href="#/settings" data-route="settings"><i data-lucide="settings"></i>Configurações</a>
+    </nav>
+    <div class="sidebar-foot"><b id="tenant-name"></b><span id="role-name"></span></div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu"><i data-lucide="menu"></i></button>
+      <h2 id="page-title"></h2>
+      <form class="search-box top" id="global-search"><i data-lucide="search"></i><input name="q" placeholder="Pesquisar clientes…"></form>
+      <button class="icon-btn bell" id="bell" title="Tarefas atrasadas"><i data-lucide="bell"></i><span class="dot" id="bell-dot" hidden></span></button>
+      <div class="user">
+        <button id="user-btn"><span class="avatar" id="avatar"></span><span class="uname" id="uname"></span><i data-lucide="chevron-down"></i></button>
+        <div class="dropdown" id="dropdown" hidden><a href="#/settings">Configurações da conta</a><button id="logout">Sair</button></div>
+      </div>
+    </header>
+    <main id="view" class="content"></main>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="js/config.js"></script><script src="js/supabase.js"></script><script src="js/utils.js"></script><script src="js/auth.js"></script>
+<script src="js/app.js"></script><script src="js/crud.js"></script>
+<script src="js/dashboard.js"></script><script src="js/clients.js"></script><script src="js/companies.js"></script><script src="js/opportunities.js"></script>
+<script src="js/sales.js"></script><script src="js/tasks.js"></script><script src="js/reports.js"></script><script src="js/settings.js"></script>
+</body></html>

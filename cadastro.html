@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Criar conta · NEXA BUSINESS</title>
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+<main class="auth">
+  <section class="auth-brand">
+    <div class="logo">NEXA<span>.</span>BUSINESS</div>
+    <div><h2>Toda a gestão comercial da sua empresa em um só lugar.</h2>
+      <p>Clientes, oportunidades, vendas e tarefas com dados seguros e sempre atualizados.</p>
+      <ul><li>Pipeline de vendas em Kanban</li><li>Indicadores em tempo real</li><li>Dados isolados por empresa</li></ul></div>
+    <small style="color:#8fa6bd">© NEXA BUSINESS</small>
+  </section>
+  <section class="auth-form"><div class="auth-card">
+    <h1>Criar conta</h1><p class="sub">Cadastre sua empresa e comece em minutos.</p>
+    <div id="config-warning" class="alert" hidden>Configure a URL e a chave do Supabase em <b>js/config.js</b> (veja o README).</div>
+    <form id="form-signup">
+<div class="field"><label for="full_name">Nome completo</label><input id="full_name" name="full_name" required></div>
+<div class="field"><label for="company_name">Nome da empresa (nova conta)</label><input id="company_name" name="company_name"></div>
+<div class="field"><label for="invite_code">Código de convite (opcional, para entrar em uma conta existente)</label><input id="invite_code" name="invite_code"></div>
+<div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div>
+<div class="field"><label for="password">Senha (mín. 6 caracteres)</label><input id="password" name="password" type="password" minlength="6" required autocomplete="new-password"></div>
+<div class="field"><label for="confirm">Confirmar senha</label><input id="confirm" name="confirm" type="password" minlength="6" required autocomplete="new-password"></div>
+      <button class="btn" type="submit">Criar conta</button>
+    </form>
+    <div class="auth-links"><span>Já tem conta?</span><a href="login.html">Entrar</a></div>
+  </div></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="js/config.js"></script><script src="js/supabase.js"></script><script src="js/utils.js"></script><script src="js/auth.js"></script>
+</body></html>
